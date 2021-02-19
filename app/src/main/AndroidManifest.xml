@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studyguide_assoiateandroid">
+
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Timber.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudyGuideAssoiateAndroid">
+        <activity android:name=".DataManagment.PreferenceSettings.PreferenceMain" />
+        <activity
+            android:name=".DataManagment.PreferenceSettings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".DataManagment.PreferenceSettings.PreferenceMain"/>
+        <activity android:name=".DataManagment.SharedPreferencesEx" />
+        <activity android:name=".Timber.TimberTest" />
+        <activity
+            android:name=".UserInterface.MaterialComponentSHRINE.ShrineMain"
+            android:theme="@style/Theme.Shrine" />
+        <activity android:name=".UserInterface.CustomDrawable_Menus" />
+        <activity android:name=".UserInterface.PagingEx.PagingExample" />
+        <activity
+            android:name=".UserInterface.NavigationLayoutTry2"
+            android:label="this is a tag in the manifest"
+            android:theme="@style/Theme.StudyGuideAssoiateAndroid.NoActionBar" />
+        <activity
+            android:name=".UserInterface.DrawerLayoutEx"
+            android:label="@string/title_activity_drawer_layout_ex"
+            android:theme="@style/Theme.StudyGuideAssoiateAndroid.NoActionBar" />
+        <activity android:name=".AndroidCore.WorkManager.BlurActivity" />
+        <activity android:name=".AndroidCore.AndroidArchitecture.WordListDisplayActivity" />
+        <activity android:name=".AndroidCore.NotificationEx" />
+        <activity android:name=".AndroidCore.Toast_SnackBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AndroidCore.MyBroadcastReceiver" />
+    </application>
+
+</manifest>
